@@ -45,10 +45,10 @@ public class Sketch extends PApplet {
   }
 /**
  * makes waves at points specified at xWave and yWave. The waveEnd and the wavelength specify the frequency and the wavelength of each wave. 
- * @param xWave
- * @param yWave
- * @param waveEnd
- * @param wavelength
+ * @param xWave specifies the x position of the wave
+ * @param yWave specifies the x position of the wave
+ * @param waveEnd specifies when the wave ends in the for loop; in other words, how many times the wave repeats.
+ * @param wavelength specifies how many steps the for loop takes, and the wavelength of the wave.
  */
   public void surfaceWave(int xWave, int yWave, int waveEnd, int wavelength){
     stroke(0);
@@ -63,11 +63,11 @@ public class Sketch extends PApplet {
   
 /**
  * twoSurfaceWavesMagnitude finds the length of the line between two points. twoSurfaceWavesXComponent and twoSurfaceWavesYComponent splits the magnitude into x and y components. 
- * @param xWave1
- * @param yWave1
- * @param xWave2
- * @param yWave2
- * @return
+ * @param xWave1 specifies the x position of the first point.
+ * @param yWave1 specifies the y position of the first point.
+ * @param xWave2 specifies the x position of the second point.
+ * @param yWave2 specifies the y position of the second point.
+ * @return twoSurfaceWavesMagnitude returns the length of the line between two points. twoSurfaceWavesXComponent and twoSurfaceWavesYComponent splits the magnitude into x and y components and returns it. 
  */
   public double twoSurfaceWavesMagnitude(int xWave1, int yWave1, int xWave2, int yWave2){
     // this just draws the other parts of the triangle, ignore this.
